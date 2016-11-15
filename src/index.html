@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body onload="initialize()">
 	<header>
 		<div class="conteiner">
 			<div class="logo"></div>
@@ -41,39 +41,39 @@
 					<div class="row  program_item">
 						<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 ">
 							<div class="content_item__title">міжнародний фестиваль вертепів   </div>
-							<div class="content_item__desctiption-invert content_item__desctiption pink"><span>«Перлини Слобожанщини: різдвяні свята» </span>  </div>
+							<div class="content_item__desctiption-invert content_item__desctiption"><span class=" pink">«Перлини Слобожанщини: різдвяні свята» </span>  </div>
 						</div>
 						<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
 							<div class="content_item__title">проект</div>
-							<div class="content_item__desctiption"><img src="" alt=""></div>
+							<div class="content_item__desctiption"><img style="width:90%;" src="/img/toloka-text.png" alt=""></div>
 						</div>
 						<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
 							<div class="content_item__title">національна скаутська організація </div>
-							<div class="peach content_item__desctiption content_item__desctiption-invert"><span>«Пласт»</span></div>
+							<div class=" content_item__desctiption content_item__desctiption-invert"><span class="peach ">«Пласт»</span></div>
 						</div>
 					</div>
 					<div class="row program_item">
 						<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
 							<div class="content_item__title">презентатеатральний шоу-фест </div>
-							<div class="dark-green content_item__desctiption-invert content_item__desctiption"><span>«Платформа77»</span></div>
+							<div class=" content_item__desctiption-invert content_item__desctiption"><span class="dark-green">«Платформа77»</span></div>
 						</div>
 						<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
 							<div class="content_item__title">французький арт-проект    </div>
-							<div class="green content_item__desctiption-invert content_item__desctiption">   <span>«Detour (s)»</span></div>
+							<div class="content_item__desctiption-invert content_item__desctiption">   <span class="green ">«Detour (s)»</span></div>
 						</div>
 						<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
 							<div class="content_item__title">фестиваль науки   </div>
-							<div class="light-green  content_item__desctiption-invert content_item__desctiption"><span>«Наукові пікники» </span> </div>
+							<div class="light-green  content_item__desctiption-invert content_item__desctiption"><span class="light-green">«Наукові пікники» </span> </div>
 						</div>
 					</div>
 					<div class="row program_item">
 						<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">							
 							<div class="content_item__title">арт-парад    </div>
-							<div class="blue content_item__desctiption-invert content_item__desctiption"><span>«Слобожанська вишиванка»</span>   </div>
+							<div class=" content_item__desctiption-invert content_item__desctiption"><span class="blue">«Слобожанська вишиванка»</span>   </div>
 						</div>
 						<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">							
 							<div class="content_item__title">фестиваль  </div>
-							<div class="light-blue content_item__desctiption-invert content_item__desctiption"><span>«День однієї вулиці»</span>   </div>
+							<div class="content_item__desctiption-invert content_item__desctiption"><span class="light-blue ">«День однієї вулиці»</span>   </div>
 						</div>
 					</div>
 					<div class="content_title">а також</div>
@@ -92,6 +92,19 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="maps section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-lg-2 col-sm-4 col-xs-12 title title_inver">Час і місце
+				<p class=" title_inver"> Захід відбудеться 
+				2 грудня 2016 року 
+				у Центрі сучасного мистецтва 
+				Єрмілов-центр (м. Харків)</p>
+				</div>
+				<div class="col-md-10 col-lg-9 col-sm-8 col-xs-12" id="map_canvas"><div></div></div>
 			</div>
 		</div>
 	</div>
@@ -181,6 +194,37 @@
 <footer>
 	<div class="social"></div>
 </footer>
-	
+	<script type="text/javascript">
+ function initialize() {
+ var latlng = new google.maps.LatLng(49.993352, 36.239661);
+ var settings = {
+ zoom: 12,
+ center: latlng,
+ mapTypeControl: true,
+ mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+ navigationControl: true,
+ navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+ mapTypeId: google.maps.MapTypeId.ROADMAP
+ };
+ var map = new google.maps.Map(document.getElementById("map_canvas"), 
+settings);
+  var styles = [
+  {
+      featureType: 'all',
+ 		stylers: [
+ 			{hue: '#ff00ff'},
+		]
+	}
+];
+
+map.setOptions({styles: styles});
+ var companyPos = new google.maps.LatLng(49.993352, 36.239661);
+var companyMarker = new google.maps.Marker({
+position: companyPos,
+map: map,
+title:"Some title"
+});
+ }
+</script>
 </body>
 </html>
