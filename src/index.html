@@ -7,37 +7,93 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body onload="initialize()">
-	<header>
-		<div class="conteiner">
-			<div class="logo"></div>
-			<div class="navbar-header"></div>
-			<!-- <div id="paral_3"><img src="img/parralax_3.png" alt=""></div>
-			<div id="paral_1"><img src="img/parralax_1.png" alt=""></div>
-			<div id="paral_2"><img src="img/parralax_2.png" alt=""></div> -->
+<!-- onload="initialize()"  -->
+<body>
+	<header class="">
+		<div class="container header">
+			<div class="row">
+				<div class="col-md-4 col-lg-5 col-sm-5 col-xs-10">
+					<a href=""><div class="logo"></div></a></div>
+				<div class="col-md-8 col-lg-7 col-sm-7 col-xs-12 content ">
+					<div class="navbar-header">
+						<ul class="nav navbar-nav">
+							<li><a href="#about">О нас</a></li>
+							<li><a href="#program">Программа</a></li>
+							<li><a href="#maps">Час і місце</a></li>
+							<li><a href="#organisation">Огранізатори</a></li>
+							<li><a href="#partners">Партнери</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 date_wrapper">
+					<div class="date">2 грудня </div>
+					<div class="place">Єрмілов-центр </div>
+					<a href="#maps">Cмотреть на карте</a>
+				</div>
+				<div class="col-md-9 col-lg-9 col-sm-9 col-xs-11">
+					<span class="header_title">Ми готуємо </span>
+					<div class="big_title">
+						<span>TOLOKA<br> TALKS
+						</span>
+					</div>
+
+				</div>
+				
+
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-lg-3 col-sm-3 col-xs-1"></div>
+				<div class="col-md-9 col-lg-9 col-sm-9 col-xs-11">
+					<div id="countdown" class="countdownHolder"></div>					
+				</div>
+				
+
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-lg-3 col-sm-3 col-xs-1"></div>
+				<div class="col-md-9 col-lg-9 col-sm-9 col-xs-11">
+						
+				<div class="header__button_wrap button_wrap">
+					<a href="#form" class="btn btn-default" >Взяти участь</a>
+				</div>			
+				</div>
+
+
+			</div>
+			<div id="paral_3" class="paral"><img src="img/parralax_3.png" alt=""></div>
+			<div id="paral_1" class="paral"><img src="img/parralax_1.png" alt=""></div>
+			<div id="paral_2" class="paral"><img src="img/parralax_2.png" alt=""></div>
 
 
 		</div>
 	</header>
 
-	<div class="about section">
+	<div id="about"class="about section">
 		<!-- <img src="/img/about.png" alt=""> -->
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 col-lg-3 col-sm-4 col-xs-12 title title_inver">Toloka talks <span class="title_temp">це</span></div>
 				<div class="col-md-10 col-lg-9 col-sm-8 col-xs-12 content "><span>форум для комунікації соціально відповідальних харків'ян, 
 об'єднаних демократичними цінностями і готових докладати зусилля, 
-спрямовані на поліпшення соціально-економічного «клімату» Харкова.</span> </div>
+спрямовані на поліпшення соціально-економічного «клімату» Харкова.</span> 
+						<i class="icon icon_doc"></i><a href="" class="document">Завантажити інформацію о фестивалі</a></div>
 			</div>
 		</div>
 	</div>
-	<div class="program  section">
+	<div id="program" class="program  section">
 		<!-- <img src="/img/about.png" alt=""> -->
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2 col-lg-3 col-sm-4 col-xs-12 title">Програма</div>
+				<div class="col-md-2 col-lg-3 col-sm-4 col-xs-12 title">Програма
+
+		<div id="paral_4" class="paral"><img src="img/parralax_4.png" alt=""></div>
+				<span class="icon icon-right"></span>
+
+				</div>
 				<div class="col-md-10 col-lg-9 col-sm-8 col-xs-12 content ">
-					<div class="content_title">Презентації</div>
+					<div class="content_title">	<span class="icon icon-small-right"></span>Презентації</div>
 					<div class="row  program_item">
 						<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 ">
 							<div class="content_item__title">міжнародний фестиваль вертепів   </div>
@@ -76,7 +132,8 @@
 							<div class="content_item__desctiption-invert content_item__desctiption"><span class="light-blue ">«День однієї вулиці»</span>   </div>
 						</div>
 					</div>
-					<div class="content_title">а також</div>
+					<div class="content_title">
+						<span class="icon icon-small-left"></span>а також</div>
 					<div class="row program_item">
 						<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">							
 							<div class="content_item__title">майстер-клас  </div>
@@ -93,9 +150,11 @@
 					</div>
 				</div>
 			</div>
+		<div id="paral_5" class="paral"><img src="img/parralax_5.png" alt=""></div>
 		</div>
+
 	</div>
-	<div class="maps section">
+	<div id="maps" class="maps section" >
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 col-lg-2 col-sm-4 col-xs-12 title title_inver">Час і місце
@@ -104,8 +163,76 @@
 				у Центрі сучасного мистецтва 
 				Єрмілов-центр (м. Харків)</p>
 				</div>
-				<div class="col-md-10 col-lg-9 col-sm-8 col-xs-12" id="map_canvas"><div></div></div>
+				<div class="col-md-10 col-lg-9 col-sm-8 col-xs-12" id="map"><section style="min-height: 300px;" id="map-record"
+                                             data-lat="30"
+                                             data-lng="50"
+                                             data-title="<?= $record->event->address; ?>"
+                                             data-zoom="8"></section>
+					<div></div></div>
 			</div>
+		</div>
+	</div>
+	<div id="form" class="form">
+		<div class="container">
+
+			<form action="">
+				<div class="title">Отримати запрошення</div>
+				<div class="form_text">
+					
+				<p class="">Заповніть форму, щоб замовити квитки на <b>«Toloka Talks»</b></p>
+				<p>Мінімальна вартість квитка – <b>300 грн.</b>, але ви можете визначити ціну самі,
+щоб зробити внесок у спільну справу</p>
+				</div>
+				<div class="control-group">
+				    <div class="controls">
+				      <input class="form-control"  type="text" id="inputName" placeholder="Ім’я">
+				    </div>
+				</div>
+				<div class="control-group">
+				    <div class="controls">
+				      <input class="form-control"  type="tel" id="inputPhone" placeholder="Телефон">
+				    </div>
+				</div>
+				<div class="control-group">
+				    <div class="controls">
+				      <input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+				    </div>
+				</div>
+				<div class="required_fields">
+					<div class="row">
+						<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+							<label for="number">Кількість</label>
+						</div>
+						<!-- <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+							<label for="price">Вартість</label>
+						</div> -->
+						<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+							<label for="inputSum">Усього</label>
+						</div>
+					</div>
+					<div class="row input_wrap">
+						<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 input_item control-group" >
+							<span class="less" id="btnLess">-</span>
+							<span class="more" id="btnMore">+</span>
+							<input type="text" class="form-control"  id="number" value="1">
+							
+						</div>
+						<!-- <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 input_item">
+							<input type="text" class="form-control"  id="price" value="300">
+						</div> -->
+						<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 control-group">
+							<div class="visual_sum form-control" id="inputSum">300</div>
+						</div>					
+					</div>
+				</div>
+			
+				<div class="button_wrap">
+					<input class="btn btn-default" type="submit" value="Замовити">
+				</div>
+				
+			</form>
+
+		<div id="paral_6" class="paral"><img src="img/parralax_6.png" alt=""></div>
 		</div>
 	</div>
 	<div class="meta section">
@@ -123,7 +250,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 col-lg-3 col-sm-4 col-xs-12 title">Формат заходу: </div>
-				<div class="col-md-10 col-lg-9 col-sm-8 col-xs-12 content "><span>захід передбачає презентації проектів, спрямованих на розвиток Харкова, воркшопи, виставки, 
+				<div class="col-md-10 col-lg-9 col-sm-8 col-xs-12 content ">
+						<span class="icon icon-middle-right"></span><br><span>захід передбачає презентації проектів, спрямованих на розвиток Харкова, воркшопи, виставки, 
 дискусії, неформальне спілкування учасників, а також виступи художніх  колективів. 
 На зустріч запрошуються представники бізнесових кіл, дипломатичних місій, громадські активісти, 
 представники міжнародних і регіональних громадських організацій.
@@ -135,8 +263,8 @@
 			</div>
 			</div>
 				<div class="row">
-					<div class="carousel col-md-8 col-lg-8 col-sm-8 col-xs-12"><img src="/img/images.png" alt=""></div>
-					<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 format_description">
+					<div class="carousel col-md-8 col-lg-8 col-sm-12 col-xs-12"><img src="/img/images.png" alt=""></div>
+					<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 format_description"><span class="icon icon-middle-up"></span><br>
 						<p>Зібрані кошти підуть на реалізацію у м. Харкові першого Фестивалю вертепів  </p>
 						<span class="event_name title">«Перлини Слобожанщини: різдвяні свята»</span>
 						<p>який відбудеться у м. Харкові </p>
@@ -144,30 +272,35 @@
 						<i class="icon icon_doc"></i><a href="" class="document">Завантажити інформацію о фестивалі</a>
 					</div>
 				</div>
+
+		<div id="paral_7" class="paral"><img src="img/parralax_7.png" alt=""></div>
 		</div>
 	</div>
-	<div class="organisation section">
+	<div id="organisation" class="organisation section">
 		<!-- <img src="/img/about.png" alt=""> -->
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 col-lg-4 col-sm-5 col-xs-12 title">Організатори</div>
+				<div class="col-md-5 col-lg-4 col-sm-5 col-xs-12 title"><span class="icon icon-middle-right"></span><br>Організатори</div>
 				<div class="col-md-7 col-lg-8 col-sm-7 col-xs-12 content "><span>Захід проходить з ініціативи Фонду громади Харкова «Толока» та за підтримки Почесного консула Французької республіки в Харкові <span class="content_dig">Сергія Політучого</span>
 				</span> </div>
 			</div>
+
+		<div id="paral_8" class="paral"><img src="img/parralax_8.png" alt=""></div>
 		</div>
+
 	</div>
 	<div class="description section">
 		<!-- <img src="/img/about.png" alt=""> -->
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 title">Що таке Толока?</div>
+				<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 title"><span class="icon icon-middle-up"></span><br>Що таке Толока?</div>
 				<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 content ">
 					<div class="row">
-						<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+						<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
 							<div class="description_text">«Толока» - Фонд громади м. Харкова, який був започаткований групою ініціативних успішних харків'ян,  яких об'єднують любов до свого міста та бажання допомогти городянам будувати власне майбутнє.</div>
 							<div class="description_text">Серед головних завдань Фонду - сприяння розвитку партнерської взаємодії між громадськими організаціями, бізнес-структурами, органами місцевого самоврядування, місцевим населенням, та формування культури філантропії і соціальної відповідальності для сприяння довгостроковому сталому розвитку громади.</div>
 						</div>
-						<div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">						
+						<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">						
 							<div class="description_text">Перший  фонд громади був створений у США в місті  Клівленді у 1914 році банкіром Фредеріком Гаріс Гоффом. Протягом наступних 65 років фонди громад існували лише в США та Канаді. Глобалізація  руху фондів громад припала на кінець ХХ століття. Це пов’язано як із бурхливим розвитком організацій  громадянського  суспільства,  так і з запитом на більш організовану та структуровану благодійність. Сьогодні фонди громад існують у 84 країнах світу, зокрема і в Україні.
 							</div>
 						</div>
@@ -177,7 +310,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="partners ">
+	<div class="partners" id="partners">
 		<div class="container">
 			<div class="row">
 					
@@ -194,37 +327,9 @@
 <footer>
 	<div class="social"></div>
 </footer>
-	<script type="text/javascript">
- function initialize() {
- var latlng = new google.maps.LatLng(49.993352, 36.239661);
- var settings = {
- zoom: 12,
- center: latlng,
- mapTypeControl: true,
- mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
- navigationControl: true,
- navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
- mapTypeId: google.maps.MapTypeId.ROADMAP
- };
- var map = new google.maps.Map(document.getElementById("map_canvas"), 
-settings);
-  var styles = [
-  {
-      featureType: 'all',
- 		stylers: [
- 			{hue: '#ff00ff'},
-		]
-	}
-];
-
-map.setOptions({styles: styles});
- var companyPos = new google.maps.LatLng(49.993352, 36.239661);
-var companyMarker = new google.maps.Marker({
-position: companyPos,
-map: map,
-title:"Some title"
-});
- }
+<script
+	      src="http://maps.google.com/maps/api/js?ver=4.1.7&key=AIzaSyBWY8llZohaX-FGwCtNl6qFoLpZKKtFkss">
 </script>
+<script src="js/main.js"></script>	
 </body>
 </html>
